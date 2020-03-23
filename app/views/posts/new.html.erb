@@ -1,0 +1,8 @@
+<div class = "contents__title">
+  問題の作成
+</div>
+
+<%= form_with model: @post, class: :form, local: true do |form| %>
+  <%= form.text_field :title, placeholder: :クイズのジャンル, class: :form__title %>
+  <%= form.submit '問題を作る', class: :form__btn %>
+<% end %>

@@ -10,6 +10,18 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class = "header">
+      <div class = "header__title">
+        <%= link_to "Quiz App", root_path, class: "header__title__text" %>
+      </div>
+      <div class = "header__right">
+        <%= link_to "クイズ作成", new_post_path, class: "header__right__btn" %>
+        <%= link_to "マイページ", '#', class: "header__right__btn" %>
+        <%= link_to "ログアウト", '#', class: "header__right__btn" %>
+      </div>
+    </header>
+    <div class = "contents">
+      <%= yield %>
+    </div>
   </body>
 </html>
